@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Qual deus grego é o governante do Olimpo e do céu?",
+    "options": ["Hades", "Poseidon", "Ares", "Zeus"],
+    "correctAnswer": "Zeus"
+  },
+  {
+    "question": "Quem era a deusa grega da sabedoria e da guerra estratégica?",
+    "options": ["Afrodite", "Atena", "Hera", "Ártemis"],
+    "correctAnswer": "Atena"
+  },
+  {
+    "question": "Qual criatura mitológica tinha cabeça de leão, corpo de cabra e cauda de serpente?",
+    "options": ["Minotauro", "Hidra", "Quimera", "Cérbero"],
+    "correctAnswer": "Quimera"
+  },
+  {
+    "question": "Quem era o herói que matou a Medusa?",
+    "options": ["Hércules", "Perseu", "Teseu", "Jasão"],
+    "correctAnswer": "Perseu"
+  },
+  {
+    "question": "Qual deus era o senhor dos mares e dos terremotos?",
+    "options": ["Apolo", "Poseidon", "Hefesto", "Dionísio"],
+    "correctAnswer": "Poseidon"
+  },
+  {
+    "question": "Quem era a deusa do amor e da beleza?",
+    "options": ["Deméter", "Hera", "Afrodite", "Perséfone"],
+    "correctAnswer": "Afrodite"
+  },
+  {
+    "question": "Qual o outro nome do submundo na mitologia grega, governado por Hades?",
+    "options": ["Elísios", "Tártaro", "Campos Asfódelos", "Mundo Inferior"],
+    "correctAnswer": "Mundo Inferior"
+  },
+  {
+    "question": "Quem era o deus mensageiro, com sandálias aladas?",
+    "options": ["Ares", "Hermes", "Hades", "Apolo"],
+    "correctAnswer": "Hermes"
+  },
+  {
+    "question": "Qual era a criatura com cabeça e tronco de homem e pernas de cavalo?",
+    "options": ["Sátiro", "Centauro", "Minotauro", "Ciclopes"],
+    "correctAnswer": "Centauro"
+  },
+  {
+    "question": "Qual titã foi condenado a segurar o céu por toda a eternidade?",
+    "options": ["Prometeu", "Cronos", "Atlas", "Oceano"],
+    "correctAnswer": "Atlas"
+  },
+  {
+    "question": "Qual dos seguintes heróis gregos não faz parte da história da Guerra de Troia?",
+    "options": ["Ulisses", "Aquiles", "Jasão", "Heitor"],
+    "correctAnswer": "Jasão"
+  },
+  {
+    "question": "Qual dos seguintes não é um deus do panteão olímpico?",
+    "options": ["Apolo", "Perséfone", "Ártemis", "Hera"],
+    "correctAnswer": "Perséfone"
+  }
+]

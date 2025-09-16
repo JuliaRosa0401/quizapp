@@ -36,7 +36,7 @@ export default function HomeScreen({ onStartQuiz }: HomeScreenProps) {
 
       // Música de fundo (toca em loop)
       const { sound: musicObject } = await Audio.Sound.createAsync(
-        require('../assets/sounds/background.mp3'), // Ou crie um arquivo específico para música de fundo
+        require('../assets/sounds/background.mp3'), 
         { shouldPlay: true, isLooping: true } // Toca automaticamente e em loop
       );
       setBackgroundMusic(musicObject);

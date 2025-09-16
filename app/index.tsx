@@ -4,7 +4,7 @@ import QuizScreen from '../components/QuizScreen';
 import ResultScreen from '../components/ResultScreen';
 import HomeScreen from '../components/HomeScreen';
 import LevelSelectionScreen from '../components/LevelSelectionScreen';
-import TimeScreen from '../components/TimeScreen'; // Importe a TimeScreen
+import TimeScreen from '../components/TimeScreen';
 import questions from '../questions.json';
 
 interface Question {
@@ -15,7 +15,7 @@ interface Question {
 }
 
 const typedQuestions: Question[] = questions as Question[];
-const [hintsUsed, setHintsUsed] = useState(0);
+const TOTAL_QUESTIONS = 12; // Número fixo de perguntas
 
 export default function HomePage() {
   const [currentScreen, setCurrentScreen] = useState<'home' | 'level' | 'time' | 'quiz' | 'result'>('home');
@@ -24,12 +24,20 @@ export default function HomePage() {
   const [isOptionsDisabled, setIsOptionsDisabled] = useState(false);
   const [score, setScore] = useState(0);
   const [selectedLevel, setSelectedLevel] = useState<string>('fácil');
-  const [filteredQuestions, setFilteredQuestions] = useState<Question[]>(typedQuestions);
-  const [isTimedMode, setIsTimedMode] = useState(false); // Estado para modo cronometrado
+  const [filteredQuestions, setFilteredQuestions] = useState<Question[]>([]);
+  const [isTimedMode, setIsTimedMode] = useState(false);
+  const [hintsUsed, setHintsUsed] = useState(0);
 
-  // Filtrar questões baseado no nível selecionado
+  // Função para selecionar perguntas aleatórias
+  const selectRandomQuestions = (questions: Question[], count: number): Question[] => {
+    const shuffled = [...questions].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+
+  // Filtrar questões baseado no nível selecionado e selecionar 12 aleatórias
   const filterQuestionsByLevel = (level: string) => {
-    return typedQuestions.filter(question => question.difficulty === level);
+    const levelQuestions = typedQuestions.filter(question => question.difficulty === level);
+    return selectRandomQuestions(levelQuestions, TOTAL_QUESTIONS);
   };
 
   const currentQuestion = filteredQuestions[currentQuestionIndex];
@@ -42,20 +50,20 @@ export default function HomePage() {
     setSelectedLevel(level);
     const filtered = filterQuestionsByLevel(level);
     setFilteredQuestions(filtered);
-    setCurrentScreen('time'); // Vai para a tela de seleção de tempo
+    setCurrentScreen('time');
   };
 
   const handleSelectMode = (withTime: boolean) => {
     setIsTimedMode(withTime);
-    setCurrentScreen('quiz'); // Agora vai para o quiz
+    setCurrentScreen('quiz');
     setCurrentQuestionIndex(0);
     setSelectedOption(null);
     setIsOptionsDisabled(false);
     setScore(0);
+    setHintsUsed(0); // Resetar dicas usadas a cada novo quiz
   };
 
   const handleTimeUp = () => {
-    // Avança automaticamente para a próxima questão quando o tempo acaba
     handleNextQuestion();
   };
 
@@ -78,7 +86,15 @@ export default function HomePage() {
   };
 
   const handlePlayAgain = () => {
-    setCurrentScreen('level');
+    // Gerar novas perguntas aleatórias ao jogar novamente
+    const newFiltered = filterQuestionsByLevel(selectedLevel);
+    setFilteredQuestions(newFiltered);
+    setCurrentScreen('quiz');
+    setCurrentQuestionIndex(0);
+    setSelectedOption(null);
+    setIsOptionsDisabled(false);
+    setScore(0);
+    setHintsUsed(0);
   };
 
   const handleBackToHome = () => {
@@ -128,7 +144,6 @@ export default function HomePage() {
           isTimedMode={isTimedMode}
           timePerQuestion={15}
           onTimeUp={handleTimeUp}
-          onUseHint={() => setHintsUsed(prev => prev + 1)}
         />
       );
     

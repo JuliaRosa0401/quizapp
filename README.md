@@ -1,6 +1,6 @@
-# 🏆 Quiz App - [Seu Nome Completo Aqui]
+# 🏆 Quiz App - Julia de Moura Rosa
 
-> Status do Projeto: Concluído ✔️
+> Status do Projeto: Em aprimoramento 💡
 
 ---
 
@@ -24,7 +24,7 @@ Este projeto é um aplicativo de Quiz multiplataforma, desenvolvido com React Na
 
 ### Demonstração da Aplicação
 <p align="center">
-  <img src="link-para-seu-gif-ou-video.gif" alt="Demonstração do App" width="300"/>
+  <img src="" alt="Demonstração do App" width="300"/>
 </p>
 
 ---
@@ -67,15 +67,26 @@ Após executar `npm start`, pressione `w` para abrir no navegador ou escaneie o 
 
 ---
 
-## ✨ Funcionalidade Adicional: [Nome da sua Feature]
+## ✨ Funcionalidade Adicional:
 
-Esta seção detalha a funcionalidade extra implementada como parte do desafio final do curso.
+## 1 Modo de Jogo com Tempo (Timed Mode)
+**Descrição:** Adicionei um modo de jogo com tempo, onde o jogador tem um tempo limitado (15 segundos) para responder a cada pergunta. Se o tempo acabar, a pergunta é automaticamente marcada como incorreta. Este modo oferece um desafio extra e uma experiência mais dinâmica.
 
-### Descrição
-*Aqui você deve descrever em 1 ou 2 parágrafos o que a nova funcionalidade faz e como ela se integra ao aplicativo de Quiz.*
+**Desafios e Aprendizados:** Para implementar o timer, usei o hook useEffect do React para gerenciar o estado do tempo e o setInterval para a contagem regressiva. O maior desafio foi garantir que o timer reiniciasse corretamente a cada nova pergunta e parasse quando uma opção fosse selecionada ou o tempo esgotasse.
 
-### Desafios e Aprendizados
-*Nesta seção, descreva brevemente o que você precisou pesquisar e aprender para implementar a funcionalidade. Qual foi o maior desafio? Qual novo Hook do React, API do Expo ou conceito de lógica você aplicou?*
+## 2 Sistema de Dicas (Hint System)
+**Descrição:** O quiz agora oferece uma "Dica dos Deuses". Cada pergunta tem uma dica associada que pode ser visualizada pelo jogador, auxiliando nas respostas mais difíceis. A quantidade de dicas usadas é contabilizada e exibida na tela de resultados.
+
+**Desafios e Aprendizados:** A principal dificuldade foi a criação de um modal reutilizável (HintModal.tsx) para exibir a dica de forma elegante, garantindo que ele não interrompesse o fluxo do jogo de forma abrupta. Além disso, foi necessário gerenciar o estado do modal e o contador de dicas a partir do componente principal (index.tsx).
+
+## 3 Seleção de Nível e Modo de Jogo
+**Descrição:** O fluxo de jogo foi aprimorado para permitir que o jogador primeiro escolha o nível de dificuldade (Fácil, Médio, Difícil) e, em seguida, o modo de jogo (com tempo ou sem tempo). Isso oferece uma flexibilidade e controle muito maior sobre a experiência de jogo.
+
+**Desafios e Aprendizados:** A navegação entre as diferentes telas (HomeScreen, LevelSelectionScreen, TimeScreen, QuizScreen) foi o ponto central aqui. A solução foi gerenciar o estado da tela atual (currentScreen) no componente principal (index.tsx), garantindo uma transição fluida e intuitiva entre os diferentes estágios do quiz.
+
+
+
+
 
 ### Demonstração da Nova Funcionalidade
 <p align="center">

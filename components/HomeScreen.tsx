@@ -98,8 +98,8 @@ export default function HomeScreen({ onStartQuiz }: HomeScreenProps) {
 
         {/* Título principal */}
         <View style={styles.titleContainer}>
-          <Text style={styles.titleText}>Greek Mythology</Text>
-          <Text style={styles.subtitleText}>Quiz Adventure</Text>
+          <Text style={styles.titleText}>Geek Mythology</Text>
+          <Text style={styles.subtitleText}>Quiz </Text>
           <View style={styles.titleIcon}>
             <Text style={styles.titleIconText}>⚡</Text>
           </View>

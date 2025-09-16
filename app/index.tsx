@@ -12,10 +12,12 @@ interface Question {
   options: string[];
   correctAnswer: string;
   difficulty: string;
+  hint?: string;
 }
 
 const typedQuestions: Question[] = questions as Question[];
-const TOTAL_QUESTIONS = 12; // Número fixo de perguntas
+const TOTAL_QUESTIONS = 12;
+const MAX_HINTS_PER_GAME = 3; // Limite máximo de dicas por jogo
 
 export default function HomePage() {
   const [currentScreen, setCurrentScreen] = useState<'home' | 'level' | 'time' | 'quiz' | 'result'>('home');
@@ -27,6 +29,7 @@ export default function HomePage() {
   const [filteredQuestions, setFilteredQuestions] = useState<Question[]>([]);
   const [isTimedMode, setIsTimedMode] = useState(false);
   const [hintsUsed, setHintsUsed] = useState(0);
+  const [hintsAvailable, setHintsAvailable] = useState(MAX_HINTS_PER_GAME); // Dicas disponíveis
 
   // Função para selecionar perguntas aleatórias
   const selectRandomQuestions = (questions: Question[], count: number): Question[] => {
@@ -60,7 +63,8 @@ export default function HomePage() {
     setSelectedOption(null);
     setIsOptionsDisabled(false);
     setScore(0);
-    setHintsUsed(0); // Resetar dicas usadas a cada novo quiz
+    setHintsUsed(0);
+    setHintsAvailable(MAX_HINTS_PER_GAME); // Resetar dicas disponíveis
   };
 
   const handleTimeUp = () => {
@@ -95,6 +99,14 @@ export default function HomePage() {
     setIsOptionsDisabled(false);
     setScore(0);
     setHintsUsed(0);
+    setHintsAvailable(MAX_HINTS_PER_GAME); // Resetar dicas disponíveis
+  };
+
+  const handleUseHint = () => {
+    if (hintsAvailable > 0) {
+      setHintsUsed(prev => prev + 1);
+      setHintsAvailable(prev => prev - 1);
+    }
   };
 
   const handleBackToHome = () => {
@@ -144,6 +156,9 @@ export default function HomePage() {
           isTimedMode={isTimedMode}
           timePerQuestion={15}
           onTimeUp={handleTimeUp}
+          onUseHint={handleUseHint}
+          hintsAvailable={hintsAvailable} // Dicas disponíveis
+          hintsUsed={hintsUsed} // Dicas usadas
         />
       );
     

@@ -115,7 +115,6 @@ export default function TimeScreen({ onSelectMode, onBackToLevels }: TimeScreenP
         {isTimedMode && (
           <View style={styles.timerInfo}>
             <Text style={styles.timerInfoText}>⏱️ 15 segundos por pergunta</Text>
-            <Text style={styles.timerInfoText}>🎯 Bônus de pontos por velocidade</Text>
             <Text style={styles.timerInfoText}>🔥 Desafio dos deuses do Olimpo!</Text>
           </View>
         )}

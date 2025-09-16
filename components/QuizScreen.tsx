@@ -1,4 +1,3 @@
-// components/QuizScreen.tsx
 import { 
   StyleSheet, 
   Text, 
@@ -31,7 +30,11 @@ type QuizScreenProps = {
   isTimedMode?: boolean;
   timePerQuestion?: number;
   onTimeUp?: () => void;
+  onUseHint?: () => void; 
+  hintsAvailable: number; 
+  hintsUsed: number;
 };
+
 
 export default function QuizScreen({
   currentQuestion,
@@ -45,20 +48,24 @@ export default function QuizScreen({
   isTimedMode = false,
   timePerQuestion = 15,
   onTimeUp,
+  onUseHint, 
+  hintsAvailable,
+  hintsUsed,
 }: QuizScreenProps) {
   const [sound, setSound] = useState<Audio.Sound | null>(null);
   const [timeLeft, setTimeLeft] = useState(timePerQuestion);
   const [timerActive, setTimerActive] = useState(true);
+  const [hintModalVisible, setHintModalVisible] = useState(false); 
 
-    useEffect(() => {
-  loadSound();
-  
-  return () => {
-    if (sound) {
-      sound.unloadAsync();
-    }
-  };
-}, []);
+  useEffect(() => {
+    loadSound();
+    
+    return () => {
+      if (sound) {
+        sound.unloadAsync();
+      }
+    };
+  }, []);
 
   // Efeito para o timer
   useEffect(() => {
@@ -81,6 +88,7 @@ export default function QuizScreen({
   useEffect(() => {
     setTimeLeft(timePerQuestion);
     setTimerActive(true);
+    setHintModalVisible(false); // Fechar dica quando a questão muda
   }, [currentQuestionIndex, timePerQuestion]);
 
   const loadSound = async () => {
@@ -105,7 +113,7 @@ export default function QuizScreen({
   };
 
   const handleOptionPress = async (option: string) => {
-    setTimerActive(false); // Para o timer quando o usuário seleciona uma opção
+    setTimerActive(false);
     onOptionPress(option);
     
     if (option !== currentQuestion.correctAnswer) {
@@ -113,6 +121,17 @@ export default function QuizScreen({
     } else {
       await playCorrectSound();
     }
+  };
+
+  const handleShowHint = () => {
+    setHintModalVisible(true);
+    if (onUseHint) {
+      onUseHint(); // Notificar o componente pai que uma dica foi usada
+    }
+  };
+
+  const handleCloseHint = () => {
+    setHintModalVisible(false);
   };
 
   const getOptionStyle = (option: string) => {
@@ -135,9 +154,8 @@ export default function QuizScreen({
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-
   return (
-     <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         {/* Header com botão de voltar e contador de questões */}
         <View style={styles.header}>
@@ -171,11 +189,30 @@ export default function QuizScreen({
           )}
         </View>
 
+        {/* Botão de dica - só aparece se houver dica disponível, nenhuma opção selecionada e dicas restantes */}
+        {currentQuestion.hint && !selectedOption && hintsAvailable > 0 && (
+          <TouchableOpacity 
+            style={styles.hintButton}
+            onPress={handleShowHint}
+          >
+            <Text style={styles.hintButtonText}>💡 ({hintsAvailable} / 3 restantes)</Text>
+          </TouchableOpacity>
+        )}
+
         <View style={styles.questionContainer}>
           <View style={styles.columnDecoration} />
           <Text style={styles.questionText}>{currentQuestion.question}</Text>
           <View style={styles.columnDecoration} />
         </View>
+
+        
+
+        {/* Mensagem quando não há mais dicas */}
+        {currentQuestion.hint && !selectedOption && hintsAvailable === 0 && (
+          <View style={styles.noHintsContainer}>
+            <Text style={styles.noHintsText}>❌ Sem dicas disponíveis</Text>
+          </View>
+        )}
 
         <View style={styles.optionsContainer}>
           {currentQuestion.options.map((option) => (
@@ -217,10 +254,18 @@ export default function QuizScreen({
             </TouchableOpacity>
           </View>
         )}
+
+        {/* Modal de dica */}
+        <HintModal
+          visible={hintModalVisible}
+          hint={currentQuestion.hint || ''}
+          onClose={handleCloseHint}
+        />
       </View>
     </SafeAreaView>
   );
 }
+
 
 const styles = StyleSheet.create({
   safeArea: {
@@ -436,16 +481,30 @@ timerContainer: {
     fontWeight: 'bold',
     marginBottom: 10,
   },
+
   hintButton: {
-    backgroundColor: '#f39c12',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    padding: 10,
+    borderRadius: 20,
+    alignSelf: 'center',
+    borderWidth: 2,
+    borderColor: '#FFF',
+    marginBottom: 15,
+  },
+  hintButtonText: {
+    color: '#FFF',
+    fontWeight: 'bold',
+    fontSize: 14,
+  },
+  noHintsContainer: {
+    alignItems: 'center',
+    marginBottom: 15,
+    backgroundColor: 'rgba(231, 76, 60, 0.3)',
     padding: 12,
     borderRadius: 20,
     alignSelf: 'center',
-    marginBottom: 15,
-    borderWidth: 2,
-    borderColor: '#FFF',
   },
-  hintButtonText: {
+  noHintsText: {
     color: '#FFF',
     fontWeight: 'bold',
     fontSize: 14,

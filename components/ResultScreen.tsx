@@ -71,9 +71,10 @@ export default function ResultScreen({
                 </TouchableOpacity>
 
                 {hintsUsed && hintsUsed > 0 && (
-                <Text style={styles.hintsText}>
-                  💡 Você usou {hintsUsed} dica{hintsUsed !== 1 ? 's' : ''}
-                </Text>)}
+                  <Text style={styles.hintsText}>
+                    💡 Você usou {hintsUsed} dica{hintsUsed !== 1 ? 's' : ''} de 3 disponíveis
+                  </Text>
+                )}
 
             </View>
         </View>

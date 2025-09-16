@@ -1,62 +1,667 @@
 [
-  {
+   {
     "question": "Qual deus grego é o governante do Olimpo e do céu?",
     "options": ["Hades", "Poseidon", "Ares", "Zeus"],
-    "correctAnswer": "Zeus"
+    "correctAnswer": "Zeus",
+    "difficulty": "fácil",
+    "hint": "Ele carrega um raio como arma."
   },
   {
     "question": "Quem era a deusa grega da sabedoria e da guerra estratégica?",
     "options": ["Afrodite", "Atena", "Hera", "Ártemis"],
-    "correctAnswer": "Atena"
-  },
-  {
-    "question": "Qual criatura mitológica tinha cabeça de leão, corpo de cabra e cauda de serpente?",
-    "options": ["Minotauro", "Hidra", "Quimera", "Cérbero"],
-    "correctAnswer": "Quimera"
-  },
-  {
-    "question": "Quem era o herói que matou a Medusa?",
-    "options": ["Hércules", "Perseu", "Teseu", "Jasão"],
-    "correctAnswer": "Perseu"
+    "correctAnswer": "Atena",
+    "difficulty": "fácil",
+    "hint": "Ela nasceu da cabeça de Zeus."
   },
   {
     "question": "Qual deus era o senhor dos mares e dos terremotos?",
     "options": ["Apolo", "Poseidon", "Hefesto", "Dionísio"],
-    "correctAnswer": "Poseidon"
+    "correctAnswer": "Poseidon",
+    "difficulty": "fácil",
+    "hint": "Ele carrega um tridente."
   },
   {
     "question": "Quem era a deusa do amor e da beleza?",
     "options": ["Deméter", "Hera", "Afrodite", "Perséfone"],
-    "correctAnswer": "Afrodite"
-  },
-  {
-    "question": "Qual o outro nome do submundo na mitologia grega, governado por Hades?",
-    "options": ["Elísios", "Tártaro", "Campos Asfódelos", "Mundo Inferior"],
-    "correctAnswer": "Mundo Inferior"
+    "correctAnswer": "Afrodite",
+    "difficulty": "fácil",
+    "hint": "Ela nasceu da espuma do mar."
   },
   {
     "question": "Quem era o deus mensageiro, com sandálias aladas?",
     "options": ["Ares", "Hermes", "Hades", "Apolo"],
-    "correctAnswer": "Hermes"
+    "correctAnswer": "Hermes",
+    "difficulty": "fácil",
+    "hint": "Ele também é o deus dos viajantes e comerciantes."
   },
   {
     "question": "Qual era a criatura com cabeça e tronco de homem e pernas de cavalo?",
     "options": ["Sátiro", "Centauro", "Minotauro", "Ciclopes"],
-    "correctAnswer": "Centauro"
+    "correctAnswer": "Centauro",
+    "difficulty": "fácil",
+    "hint": "Quíron era um famoso exemplo dessa criatura."
+  },
+  {
+    "question": "Qual deus era o ferreiro divino e artesão dos deuses?",
+    "options": ["Hefesto", "Ares", "Apolo", "Dionísio"],
+    "correctAnswer": "Hefesto",
+    "difficulty": "fácil",
+    "hint": "Ele era coxo e forjava armas poderosas."
+  },
+  {
+    "question": "Quem era a deusa da caça e da lua?",
+    "options": ["Atena", "Ártemis", "Hera", "Afrodite"],
+    "correctAnswer": "Ártemis",
+    "difficulty": "fácil",
+    "hint": "Ela é irmã gêmea de Apolo."
+  },
+  {
+    "question": "Qual deus era o senhor do submundo?",
+    "options": ["Hades", "Poseidon", "Zeus", "Ares"],
+    "correctAnswer": "Hades",
+    "difficulty": "fácil",
+    "hint": "Seu reino é o mundo dos mortos."
+  },
+  {
+    "question": "Quem era a rainha dos deuses e deusa do matrimônio?",
+    "options": ["Hera", "Atena", "Afrodite", "Deméter"],
+    "correctAnswer": "Hera",
+    "difficulty": "fácil",
+    "hint": "Ela é esposa de Zeus."
+  },
+  {
+    "question": "Qual deus era o deus do sol, da música e da profecia?",
+    "options": ["Apolo", "Hermes", "Dionísio", "Ares"],
+    "correctAnswer": "Apolo",
+    "difficulty": "fácil",
+    "hint": "Ele conduz a carruagem do sol."
+  },
+  {
+    "question": "Quem era a deusa da agricultura e das colheitas?",
+    "options": ["Deméter", "Hera", "Perséfone", "Atena"],
+    "correctAnswer": "Deméter",
+    "difficulty": "fácil",
+    "hint": "Sua filha foi raptada por Hades."
+  },
+  {
+    "question": "Qual criatura mitológica tinha cabeça de leão, corpo de cabra e cauda de serpente?",
+    "options": ["Minotauro", "Hidra", "Quimera", "Cérbero"],
+    "correctAnswer": "Quimera",
+    "difficulty": "médio",
+    "hint": "Ela cuspia fogo e foi derrotada por Belerofonte."
+  },
+  {
+    "question": "Quem era o herói que matou a Medusa?",
+    "options": ["Hércules", "Perseu", "Teseu", "Jasão"],
+    "correctAnswer": "Perseu",
+    "difficulty": "médio",
+    "hint": "Ele usou um escudo espelhado para não olhar diretamente para ela."
   },
   {
     "question": "Qual titã foi condenado a segurar o céu por toda a eternidade?",
     "options": ["Prometeu", "Cronos", "Atlas", "Oceano"],
-    "correctAnswer": "Atlas"
+    "correctAnswer": "Atlas",
+    "difficulty": "médio",
+    "hint": "Ele é frequentemente representado carregando um globo."
+  },
+  {
+    "question": "Qual herói realizou os Doze Trabalhos?",
+    "options": ["Perseu", "Hércules", "Teseu", "Ulisses"],
+    "correctAnswer": "Hércules",
+    "difficulty": "médio",
+    "hint": "Seu nome em grego é Herácles."
+  },
+  {
+    "question": "Qual monstro guardava o labirinto de Creta?",
+    "options": ["Minotauro", "Cérbero", "Hidra", "Ciclope"],
+    "correctAnswer": "Minotauro",
+    "difficulty": "médio",
+    "hint": "Era metade homem, metade touro."
+  },
+  {
+    "question": "Quem era o deus do vinho e da festividade?",
+    "options": ["Dionísio", "Apolo", "Hermes", "Ares"],
+    "correctAnswer": "Dionísio",
+    "difficulty": "médio",
+    "hint": "Também conhecido como Baco."
+  },
+  {
+    "question": "Qual herói grego teve seu calcanhar como ponto fraco?",
+    "options": ["Aquiles", "Hércules", "Perseu", "Teseu"],
+    "correctAnswer": "Aquiles",
+    "difficulty": "médio",
+    "hint": "Sua mãe o banhou no rio Estige."
+  },
+  {
+    "question": "Qual criatura mitológica tinha nove cabeças que renasciam?",
+    "options": ["Hidra de Lerna", "Quimera", "Cérbero", "Medusa"],
+    "correctAnswer": "Hidra de Lerna",
+    "difficulty": "médio",
+    "hint": "Hércules a derrotou como um de seus trabalhos."
+  },
+  {
+    "question": "Quem era o rei de Ítaca, famoso por sua inteligência?",
+    "options": ["Ulisses", "Aquiles", "Agamenon", "Menelau"],
+    "correctAnswer": "Ulisses",
+    "difficulty": "médio",
+    "hint": "Seu nome em grego é Odisseu."
+  },
+  {
+    "question": "Qual deusa nasceu da espuma do mar?",
+    "options": ["Atena", "Afrodite", "Ártemis", "Hera"],
+    "correctAnswer": "Afrodite",
+    "difficulty": "médio",
+    "hint": "Ela é associada ao planeta Vênus."
+  },
+  {
+    "question": "Quem roubou o fogo dos deuses para dar aos humanos?",
+    "options": ["Prometeu", "Epimeteu", "Atlas", "Cronos"],
+    "correctAnswer": "Prometeu",
+    "difficulty": "médio",
+    "hint": "Foi punido por Zeus sendo acorrentado a uma rocha."
+  },
+  {
+    "question": "Qual herói matou o Minotauro?",
+    "options": ["Teseu", "Perseu", "Hércules", "Jasão"],
+    "correctAnswer": "Teseu",
+    "difficulty": "médio",
+    "hint": "Ele usou um novelo de lã para não se perder no labirinto."
+  },
+  {
+    "question": "Qual o outro nome do submundo na mitologia grega, governado por Hades?",
+    "options": ["Elísios", "Tártaro", "Campos Asfódelos", "Mundo Inferior"],
+    "correctAnswer": "Mundo Inferior",
+    "difficulty": "difícil",
+    "hint": "É o reino dos mortos."
   },
   {
     "question": "Qual dos seguintes heróis gregos não faz parte da história da Guerra de Troia?",
     "options": ["Ulisses", "Aquiles", "Jasão", "Heitor"],
-    "correctAnswer": "Jasão"
+    "correctAnswer": "Jasão",
+    "difficulty": "difícil",
+    "hint": "Ele liderou os Argonautas em busca do Velocino de Ouro."
   },
   {
     "question": "Qual dos seguintes não é um deus do panteão olímpico?",
     "options": ["Apolo", "Perséfone", "Ártemis", "Hera"],
-    "correctAnswer": "Perséfone"
+    "correctAnswer": "Perséfone",
+    "difficulty": "difícil",
+    "hint": "Ela é rainha do submundo."
+  },
+  {
+    "question": "Quem era a mãe de Perséfone e deusa das estações?",
+    "options": ["Deméter", "Hera", "Leto", "Métis"],
+    "correctAnswer": "Deméter",
+    "difficulty": "difícil",
+    "hint": "Ela é a deusa da agricultura."
+  },
+  {
+    "question": "Qual titã era o pai de Zeus?",
+    "options": ["Cronos", "Urano", "Oceano", "Hiperião"],
+    "correctAnswer": "Cronos",
+    "difficulty": "difícil",
+    "hint": "Ele devorou seus filhos para evitar ser destronado."
+  },
+  {
+    "question": "Quem era o deus primordial do céu?",
+    "options": ["Urano", "Cronos", "Zeus", "Poseidon"],
+    "correctAnswer": "Urano",
+    "difficulty": "difícil",
+    "hint": "Foi castrado por seu filho Cronos."
+  },
+  {
+    "question": "Qual musa era a patrona da história?",
+    "options": ["Clio", "Calíope", "Urânia", "Tália"],
+    "correctAnswer": "Clio",
+    "difficulty": "difícil",
+    "hint": "Ela é frequentemente representada com um pergaminho."
+  },
+  {
+    "question": "Qual era o nome do cão de três cabeças que guardava o submundo?",
+    "options": ["Cérbero", "Orto", "Lábdaco", "Argos"],
+    "correctAnswer": "Cérbero",
+    "difficulty": "difícil",
+    "hint": "Hércules o capturou como um de seus trabalhos."
+  },
+  {
+    "question": "Quem era a deusa da vitória?",
+    "options": ["Nike", "Hebe", "Íris", "Têmis"],
+    "correctAnswer": "Nike",
+    "difficulty": "difícil",
+    "hint": "Seu nome é usado por uma famosa marca de artigos esportivos."
+  },
+  {
+    "question": "Qual herói liderou os Argonautas em busca do Velocino de Ouro?",
+    "options": ["Jasão", "Teseu", "Perseu", "Hércules"],
+    "correctAnswer": "Jasão",
+    "difficulty": "difícil",
+    "hint": "Ele foi ajudado pela feiticeira Medeia."
+  },
+  {
+    "question": "Qual era o nome da espada de Heitor?",
+    "options": ["Xifo", "Égide", "Harpe", "Nenhuma das alternativas"],
+    "correctAnswer": "Xifo",
+    "difficulty": "difícil",
+    "hint": "Era uma espada curta usada pelos gregos."
+  },
+  {
+    "question": "Quem era o deus do sono?",
+    "options": ["Hipnos", "Tânatos", "Morpheu", "Érebo"],
+    "correctAnswer": "Hipnos",
+    "difficulty": "difícil",
+    "hint": "Seu irmão gêmeo é o deus da morte."
+  },
+  {
+    "question": "Qual era o nome do barqueiro que levava as almas através do rio Estige?",
+    "options": ["Caronte", "Cérbero", "Tânatos", "Hades"],
+    "correctAnswer": "Caronte",
+    "difficulty": "difícil",
+    "hint": "Ele cobrava uma moeda para fazer a travessia."
+  },
+  {
+    "question": "Quem era a deusa do arco-íris?",
+    "options": ["Íris", "Hebe", "Nike", "Têmis"],
+    "correctAnswer": "Íris",
+    "difficulty": "médio",
+    "hint": "Ela era mensageira dos deuses antes de Hermes."
+  },
+  {
+    "question": "Qual herói foi abandonado ainda bebê no Monte Ida?",
+    "options": ["Páris", "Heitor", "Aquiles", "Édipo"],
+    "correctAnswer": "Páris",
+    "difficulty": "médio",
+    "hint": "Seu julgamento levou à Guerra de Troia."
+  },
+  {
+    "question": "Qual deus era representado com um capacete que o tornava invisível?",
+    "options": ["Hades", "Hefesto", "Hermes", "Ares"],
+    "correctAnswer": "Hades",
+    "difficulty": "médio",
+    "hint": "Esse capacete era chamado de Elmo da Invisibilidade."
+  },
+  {
+    "question": "Quem era a mãe de Apolo e Ártemis?",
+    "options": ["Leto", "Hera", "Deméter", "Métis"],
+    "correctAnswer": "Leto",
+    "difficulty": "médio",
+    "hint": "Ela foi perseguida por Hera durante a gravidez."
+  },
+  {
+    "question": "Qual era o animal sagrado de Atena?",
+    "options": ["Coruja", "Águia", "Pavão", "Serpente"],
+    "correctAnswer": "Coruja",
+    "difficulty": "fácil",
+    "hint": "Símbolo de sabedoria."
+  },
+  {
+    "question": "Quem era o deus da guerra selvagem e sanguinário?",
+    "options": ["Ares", "Atena", "Hefesto", "Apolo"],
+    "correctAnswer": "Ares",
+    "difficulty": "fácil",
+    "hint": "Era filho de Zeus e Hera."
+  },
+  {
+    "question": "Qual herói construiu o Cavalo de Troia?",
+    "options": ["Ulisses", "Heitor", "Aquiles", "Epeu"],
+    "correctAnswer": "Epeu",
+    "difficulty": "difícil",
+    "hint": "Foi uma ideia de Ulisses, mas construído por outro."
+  },
+  {
+    "question": "Qual era o nome do ciclope cego por Ulisses?",
+    "options": ["Polifemo", "Brontes", "Estéropes", "Argos"],
+    "correctAnswer": "Polifemo",
+    "difficulty": "médio",
+    "hint": "Ele era filho de Poseidon."
+  },
+  {
+    "question": "Quem era a deusa do destino?",
+    "options": ["Moiras", "Nêmesis", "Éris", "Hécate"],
+    "correctAnswer": "Moiras",
+    "difficulty": "difícil",
+    "hint": "Eram três irmãs que controlavam o fio da vida."
+  },
+  {
+    "question": "Qual deusa lançou o pomo da discórdia?",
+    "options": ["Éris", "Hera", "Atena", "Afrodite"],
+    "correctAnswer": "Éris",
+    "difficulty": "médio",
+    "hint": "Seu nome significa 'discórdia'."
+  },
+  {
+    "question": "Quem era o pai de Heitor e Páris?",
+    "options": ["Príamo", "Laomedonte", "Anquises", "Tros"],
+    "correctAnswer": "Príamo",
+    "difficulty": "médio",
+    "hint": "Ele era o rei de Troia durante a guerra."
+  },
+  {
+    "question": "Qual herói teve que desvendar o enigma da Esfinge?",
+    "options": ["Édipo", "Hércules", "Teseu", "Perseu"],
+    "correctAnswer": "Édipo",
+    "difficulty": "médio",
+    "hint": "O enigma era: 'Que criatura tem quatro pés de manhã, dois ao meio-dia e três à tarde?'"
+  },
+  {
+    "question": "Qual era o nome do navio de Jasão?",
+    "options": ["Argo", "Nau", "Trirreme", "Galé"],
+    "correctAnswer": "Argo",
+    "difficulty": "fácil",
+    "hint": "Seus tripulantes eram chamados de Argonautas."
+  },
+  {
+    "question": "Quem era a deusa da vingança?",
+    "options": ["Nêmesis", "Éris", "Hécate", "Perséfone"],
+    "correctAnswer": "Nêmesis",
+    "difficulty": "médio",
+    "hint": "Ela personificava a justiça retributiva."
+  },
+  {
+    "question": "Qual era a arma principal de Zeus?",
+    "options": ["Tridente", "Raio", "Martelo", "Arco e flecha"],
+    "correctAnswer": "Raio",
+    "difficulty": "fácil",
+    "hint": "Forjado pelos Ciclopes."
+  },
+  {
+    "question": "Quem era o deus do amor?",
+    "options": ["Eros", "Hélios", "Hermes", "Apolo"],
+    "correctAnswer": "Eros",
+    "difficulty": "fácil",
+    "hint": "Filho de Afrodite, também conhecido como Cupido."
+  },
+  {
+    "question": "Qual herói foi morto por uma flecha em seu calcanhar?",
+    "options": ["Aquiles", "Heitor", "Páris", "Ulisses"],
+    "correctAnswer": "Aquiles",
+    "difficulty": "fácil",
+    "hint": "Sua única fraqueza."
+  },
+  {
+    "question": "Qual era o nome da mulher que foi transformada em uma aranha?",
+    "options": ["Aracne", "Cassandra", "Medeia", "Pandora"],
+    "correctAnswer": "Aracne",
+    "difficulty": "médio",
+    "hint": "Ela desafiou Atena para um concurso de tecelagem."
+  },
+  {
+    "question": "Quem era o deus do tempo?",
+    "options": ["Cronos", "Urano", "Zeus", "Kairós"],
+    "correctAnswer": "Cronos",
+    "difficulty": "difícil",
+    "hint": "Não confundir com Chronos, a personificação do tempo."
+  },
+  {
+    "question": "Qual era o nome do jardim das maçãs de ouro?",
+    "options": ["Jardim das Hespérides", "Elísios", "Campos Asfódelos", "Olympus"],
+    "correctAnswer": "Jardim das Hespérides",
+    "difficulty": "médio",
+    "hint": "Hércules teve que buscar as maçãs como um de seus trabalhos."
+  },
+  {
+    "question": "Quem era a mãe dos titãs?",
+    "options": ["Gaia", "Reia", "Tétis", "Febe"],
+    "correctAnswer": "Gaia",
+    "difficulty": "médio",
+    "hint": "Ela é a personificação da Terra."
+  },
+  {
+    "question": "Qual herói matou a Quimera?",
+    "options": ["Belerofonte", "Perseu", "Hércules", "Teseu"],
+    "correctAnswer": "Belerofonte",
+    "difficulty": "difícil",
+    "hint": "Ele cavalgou o cavalo alado Pégaso."
+  },
+  {
+    "question": "Quem era o deus dos portões e das transições?",
+    "options": ["Hécate", "Hermes", "Jano", "Hades"],
+    "correctAnswer": "Jano",
+    "difficulty": "difícil",
+    "hint": "Ele é representado com duas faces."
+  },
+  {
+    "question": "Qual era o nome do rio do esquecimento no submundo?",
+    "options": ["Lete", "Estige", "Aqueronte", "Cócito"],
+    "correctAnswer": "Lete",
+    "difficulty": "difícil",
+    "hint": "As almas bebiam de suas águas para esquecer suas vidas passadas."
+  },
+  {
+    "question": "Quem era a deusa da magia e dos cruzamentos?",
+    "options": ["Hécate", "Perséfone", "Nix", "Éris"],
+    "correctAnswer": "Hécate",
+    "difficulty": "médio",
+    "hint": "Era associada à lua nova e à encruzilhada."
+  },
+  {
+    "question": "Qual titã era o deus do sol antes de Apolo?",
+    "options": ["Hélios", "Hiperião", "Atlas", "Prometeu"],
+    "correctAnswer": "Hélios",
+    "difficulty": "médio",
+    "hint": "Ele conduzia uma carruagem de fogo através do céu."
+  },
+  {
+    "question": "Quem era o pai de Perseu?",
+    "options": ["Zeus", "Poseidon", "Hades", "Apolo"],
+    "correctAnswer": "Zeus",
+    "difficulty": "médio",
+    "hint": "Ele se transformou em chuva de ouro para chegar até sua mãe."
+  },
+  {
+    "question": "Qual era o nome do cavalo alado?",
+    "options": ["Pégaso", "Bucéfalo", "Arion", "Centauro"],
+    "correctAnswer": "Pégaso",
+    "difficulty": "fácil",
+    "hint": "Nasceu do sangue de Medusa."
+  },
+  {
+    "question": "Quem era a deusa da discórdia?",
+    "options": ["Éris", "Nêmesis", "Hécate", "Tisífone"],
+    "correctAnswer": "Éris",
+    "difficulty": "fácil",
+    "hint": "Ela iniciou a Guerra de Troia com um pomo de ouro."
+  },
+  {
+    "question": "Qual herói teve sua visão restaurada por Hélio?",
+    "options": ["Orfeu", "Tiresias", "Édipo", "Polifemo"],
+    "correctAnswer": "Orfeu",
+    "difficulty": "difícil",
+    "hint": "Ele era um famoso músico que desceu ao submundo."
+  },
+  {
+    "question": "Quem era o deus dos ventos?",
+    "options": ["Éolo", "Zéfiro", "Bóreas", "Noto"],
+    "correctAnswer": "Éolo",
+    "difficulty": "médio",
+    "hint": "Ele guardava os ventos em uma caverna."
+  },
+  {
+    "question": "Qual era o nome da primeira mulher criada pelos deuses?",
+    "options": ["Pandora", "Europa", "Cassandra", "Medeia"],
+    "correctAnswer": "Pandora",
+    "difficulty": "fácil",
+    "hint": "Ela abriu uma caixa que liberou todos os males do mundo."
+  },
+  {
+    "question": "Quem era o deus dos pastores e rebanhos?",
+    "options": ["Pan", "Apolo", "Hermes", "Dionísio"],
+    "correctAnswer": "Pan",
+    "difficulty": "fácil",
+    "hint": "Ele tinha chifres e pernas de bode."
+  },
+  {
+    "question": "Qual era o nome do herói que construiu asas para escapar de Creta?",
+    "options": ["Ícaro", "Dédalo", "Teseu", "Perseu"],
+    "correctAnswer": "Ícaro",
+    "difficulty": "fácil",
+    "hint": "Ele voou muito perto do sol e suas asas derreteram."
+  },
+  {
+    "question": "Quem era a mãe de Hércules?",
+    "options": ["Alcmena", "Hera", "Leto", "Sêmele"],
+    "correctAnswer": "Alcmena",
+    "difficulty": "médio",
+    "hint": "Era uma mortal seduzida por Zeus."
+  },
+  {
+    "question": "Qual era o nome do gigante com cem olhos?",
+    "options": ["Argos", "Ciclope", "Tifão", "Encélado"],
+    "correctAnswer": "Argos",
+    "difficulty": "médio",
+    "hint": "Ele foi morto por Hermes a mando de Zeus."
+  },
+  {
+    "question": "Quem era a deusa da justiça?",
+    "options": ["Têmis", "Nêmesis", "Astraea", "Dike"],
+    "correctAnswer": "Têmis",
+    "difficulty": "médio",
+    "hint": "Ela é representada com uma balança."
+  },
+  {
+    "question": "Qual era o nome do rei que foi forçado a rolar uma pedra morro acima eternamente?",
+    "options": ["Sísifo", "Tântalo", "Íxion", "Prometeu"],
+    "correctAnswer": "Sísifo",
+    "difficulty": "médio",
+    "hint": "Ele foi punido por tentar enganar a morte."
+  },
+  {
+    "question": "Quem era a deusa do amanhecer?",
+    "options": ["Eos", "Héméra", "Nix", "Ártemis"],
+    "correctAnswer": "Eos",
+    "difficulty": "médio",
+    "hint": "Ela era irmã de Hélios e Selene."
+  },
+  {
+    "question": "Qual era o nome do herói que se tornou um deus do vinho?",
+    "options": ["Dionísio", "Apolo", "Orfeu", "Hércules"],
+    "correctAnswer": "Dionísio",
+    "difficulty": "difícil",
+    "hint": "Ele era filho de Zeus com uma mortal."
+  },
+  {
+    "question": "Quem era o deus dos rios?",
+    "options": ["Oceano", "Poseidon", "Aqueloo", "Nilo"],
+    "correctAnswer": "Aqueloo",
+    "difficulty": "difícil",
+    "hint": "Ele era o maior rio da Grécia."
+  },
+  {
+    "question": "Qual era o nome da ninfa que foi transformada em árvore?",
+    "options": ["Dafne", "Eco", "Calipso", "Circe"],
+    "correctAnswer": "Dafne",
+    "difficulty": "médio",
+    "hint": "Ela foi perseguida por Apolo e transformada em loureiro."
+  },
+  {
+    "question": "Quem era o deus da medicina?",
+    "options": ["Asclépio", "Apolo", "Hélios", "Hermes"],
+    "correctAnswer": "Asclépio",
+    "difficulty": "médio",
+    "hint": "Seu símbolo é uma serpente enrolada em um bastão."
+  },
+  {
+    "question": "Qual era o nome do herói que perdeu sua esposa ao olhar para trás?",
+    "options": ["Orfeu", "Ulisses", "Teseu", "Perseu"],
+    "correctAnswer": "Orfeu",
+    "difficulty": "médio",
+    "hint": "Ele tentou resgatá-la do submundo com sua música."
+  },
+  {
+    "question": "Quem era a deusa da lua?",
+    "options": ["Selene", "Ártemis", "Hécate", "Eos"],
+    "correctAnswer": "Selene",
+    "difficulty": "médio",
+    "hint": "Era irmã de Hélios e Eos."
+  },
+  {
+    "question": "Qual era o nome do cão que nunca falhava em caçar?",
+    "options": ["Laelaps", "Argos", "Cérbero", "Orto"],
+    "correctAnswer": "Laelaps",
+    "difficulty": "difícil",
+    "hint": "Foi um presente de Zeus para Europa."
+  },
+  {
+    "question": "Quem era o deus dos sonhos?",
+    "options": ["Morpheu", "Hipnos", "Tânatos", "Érebo"],
+    "correctAnswer": "Morpheu",
+    "difficulty": "médio",
+    "hint": "Ele podia assumir qualquer forma humana nos sonhos."
+  },
+  {
+    "question": "Qual era o nome da ilha onde nasceu Apolo?",
+    "options": ["Delos", "Creta", "Rodes", "Lesbos"],
+    "correctAnswer": "Delos",
+    "difficulty": "médio",
+    "hint": "Era uma ilha flutuante até ser fixada por Poseidon."
+  },
+  {
+    "question": "Quem era a deusa do destino e da inevitabilidade?",
+    "options": ["Ananke", "Têmis", "Nêmesis", "Hécate"],
+    "correctAnswer": "Ananke",
+    "difficulty": "difícil",
+    "hint": "Era a personificação do destino inescapável."
+  },
+  {
+    "question": "Qual era o nome do herói que matou o gigante Anteu?",
+    "options": ["Hércules", "Teseu", "Perseu", "Jasão"],
+    "correctAnswer": "Hércules",
+    "difficulty": "difícil",
+    "hint": "Anteu ganhava força ao tocar a terra, então Hércules o levantou."
+  },
+  {
+    "question": "Quem era o deus dos juramentos?",
+    "options": ["Horkos", "Zeus", "Hades", "Têmis"],
+    "correctAnswer": "Horkos",
+    "difficulty": "difícil",
+    "hint": "Era filho de Éris, a deusa da discórdia."
+  },
+  {
+    "question": "Qual era o nome da mulher que foi transformada em pedra?",
+    "options": ["Níobe", "Medusa", "Aracne", "Eco"],
+    "correctAnswer": "Níobe",
+    "difficulty": "médio",
+    "hint": "Ela foi punida por se gabar de ter mais filhos que Leto."
+  },
+  {
+    "question": "Quem era o deus do sarcasmo e da ironia?",
+    "options": ["Momus", "Hélios", "Hermes", "Apolo"],
+    "correctAnswer": "Momus",
+    "difficulty": "difícil",
+    "hint": "Ele era o deus da crítica e do ridículo."
+  },
+  {
+    "question": "Qual era o nome do herói que matou o javali de Erimanto?",
+    "options": ["Hércules", "Teseu", "Perseu", "Jasão"],
+    "correctAnswer": "Hércules",
+    "difficulty": "médio",
+    "hint": "Foi um de seus doze trabalhos."
+  },
+  {
+    "question": "Quem era a deusa da persuasão?",
+    "options": ["Peitho", "Atena", "Afrodite", "Hera"],
+    "correctAnswer": "Peitho",
+    "difficulty": "difícil",
+    "hint": "Era frequentemente associada a Afrodite."
+  },
+  {
+    "question": "Qual era o nome do herói que se tornou constelação?",
+    "options": ["Orion", "Perseu", "Hércules", "Teseu"],
+    "correctAnswer": "Orion",
+    "difficulty": "médio",
+    "hint": "Ele era um gigante caçador."
+  },
+  {
+    "question": "Quem era o deus dos banquetes?",
+    "options": ["Comus", "Dionísio", "Apolo", "Hermes"],
+    "correctAnswer": "Comus",
+    "difficulty": "difícil",
+    "hint": "Era filho de Dionísio e Afrodite."
+  },
+  {
+    "question": "Qual era o nome da ninfa que se apaixonou por Narciso?",
+    "options": ["Eco", "Dafne", "Calipso", "Circe"],
+    "correctAnswer": "Eco",
+    "difficulty": "médio",
+    "hint": "Ela foi amaldiçoada a apenas repetir as últimas palavras que ouvia."
   }
 ]
